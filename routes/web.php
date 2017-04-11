@@ -16,7 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('productos', 'ProductosController@index');
-
-Route::get('getproductos', function () {
-	return Datatables::collection(App\Productos::all())->make(true);
-});
+Route::get('productos/all', 'ProductosController@getData');
