@@ -24,4 +24,8 @@ class ProductosController extends Controller
         ->make(true);
         return $array;
     }
+
+    public function show($id){
+        return Productos::where('id',$id)->get();
+    }
 }

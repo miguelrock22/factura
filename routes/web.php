@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('productos', 'ProductosController@index');
 Route::get('productos/all', 'ProductosController@getData');
+Route::get('productos/{id}','ProductosController@show')->where('id', '[0-9]+');

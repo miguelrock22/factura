@@ -3,7 +3,7 @@
 
   <!-- Dropdown Structure -->
   <ul id='dropdown{{$id}}' class='dropdown-content'>
-    <li><a href="#!">Editar</a></li>
+    <li><a href="#!" class="btn-edit" data-id="{{$id}}">Editar</a></li>
     <li class="divider"></li>
-    <li><a href="#!">Eliminar</a></li>
+    <li><a href="#!" data-id="{{$id}}">Eliminar</a></li>
   </ul>

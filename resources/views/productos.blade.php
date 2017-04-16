@@ -13,11 +13,13 @@
     </thead>
 </table>
 <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red">
+    <a class="btn-floating btn-large red waves-effect waves-light btn" href="#modalProd">
         <i class="large material-icons">add</i>
     </a>
 </div>
+@include('partials/modal')
 @endsection
+
 
 @section('js')
 {{ Html::script('js/productos.js') }}
